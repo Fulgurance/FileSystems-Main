@@ -1,0 +1,14 @@
+{
+  "port": "FileSystems-Main",
+  "name": "Ntfs-3g",
+  "version": "0.0.0+22082021",
+  "architectures": ["x86_64"],
+  "description": "NTFS-3G Safe Read/Write NTFS Driver",
+  "website": "https://github.com/tuxera/ntfs-3g",
+  "downloadLinks": ["https://tuxera.com/opensource/ntfs-3g_ntfsprogs-2021.8.22.tgz"],
+  "md5sums": ["90da343e78877d388eb34cefae6799ae"],
+  "patchesLinks": [],
+  "installedFiles": [],
+  "dependencies": [],
+  "options": []
+}
