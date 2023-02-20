@@ -1,0 +1,20 @@
+{
+  "port": "FileSystems-Main",
+  "name": "Lvm2",
+  "version": "2.3.13",
+  "architectures": ["x86_64"],
+  "description": "Userspace toolset that provide logical volume management facilities on linux",
+  "website": "https://sourceware.org/lvm2/",
+  "downloadLinks": ["https://sourceware.org/ftp/lvm2/LVM2.2.03.13.tgz"],
+  "md5sums": ["c4be18fcb94c84c26f71ff4235917c28"],
+  "patchesLinks": [],
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "name": "Libaio",
+      "version": "0.3.112",
+      "options": []
+    }
+  ],
+  "options": []
+}
