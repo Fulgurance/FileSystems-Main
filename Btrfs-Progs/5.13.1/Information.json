@@ -19,6 +19,11 @@
       "name": "Xmlto",
       "version": "0.0.28",
       "options": []
+    },
+    {
+      "name": "Asciidoc",
+      "version": "9.1.0",
+      "options": []
     }
   ],
   "options": []
