@@ -14,6 +14,11 @@
       "name": "Lzo",
       "version": "2.10.0",
       "options": []
+    },
+    {
+      "name": "Xmlto",
+      "version": "0.0.28",
+      "options": []
     }
   ],
   "options": []
