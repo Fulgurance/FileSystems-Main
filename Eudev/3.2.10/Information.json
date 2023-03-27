@@ -30,6 +30,6 @@
       ],
       "downloadLinks": ["https://gitweb.gentoo.org/repo/gentoo.git/plain/sys-fs/eudev/files/udev-postmount"],
       "md5sums": ["17ca36a764f5e8a89454344cde828740"]
-    },
+    }
   ]
 }
