@@ -2,6 +2,7 @@ class Target < ISM::Software
 
     def configure
         super
+
         configureSource([   "--prefix=/usr",
                             "--bindir=/usr/sbin",
                             "--sysconfdir=/etc",
@@ -12,17 +13,25 @@ class Target < ISM::Software
 
     def build
         super
+
         makeSource([Ism.settings.makeOptions],buildDirectoryPath)
     end
 
     def prepareInstallation
         super
-        makeSource([Ism.settings.makeOptions,"DESTDIR=#{builtSoftwareDirectoryPath}/#{Ism.settings.rootPath}","install"],buildDirectoryPath)
-        makeSource([Ism.settings.makeOptions,"-f","udev-lfs-20171102/Makefile.lfs","DESTDIR=#{builtSoftwareDirectoryPath}/#{Ism.settings.rootPath}","install"],workDirectoryPath)
+
+        makeSource([Ism.settings.makeOptions,"DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}","install"],buildDirectoryPath)
+
+        if option("Openrc")
+            makeDirectory("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}etc/init.d")
+            moveFile("#{workDirectoryPath(false)}udev-postmount","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}etc/init.d/udev")
+            runChmodCommand(["+x","elogind"],"#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}etc/init.d")
+        end
     end
 
     def install
         super
+
         runUdevadmCommand(["hwdb","--update"])
     end
 
