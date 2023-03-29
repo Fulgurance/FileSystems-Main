@@ -25,7 +25,7 @@ class Target < ISM::Software
         if option("Openrc")
             makeDirectory("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}etc/init.d")
             moveFile("#{workDirectoryPath(false)}/udev-postmount","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}etc/init.d/udev")
-            runChmodCommand(["+x","udev"],"#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}etc/init.d")
+            runChmodCommand(["+x","udev"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}etc/init.d")
         end
     end
 
