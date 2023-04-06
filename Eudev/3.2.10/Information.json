@@ -11,6 +11,11 @@
   "installedFiles": [],
   "dependencies": [
     {
+      "name": "Udev-Init-Scripts",
+      "version": "35.0.0",
+      "options": []
+    },
+    {
       "name": "Nano",
       "version": "5.8.0",
       "options": []
