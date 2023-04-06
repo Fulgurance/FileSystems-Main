@@ -1,0 +1,14 @@
+{
+  "port": "FileSystems-Main",
+  "name": "Udev-Init-Scripts",
+  "version": "35.0.0",
+  "architectures": ["x86_64"],
+  "description": "Udev startup scripts for openrc",
+  "website": "https://gitweb.gentoo.org/proj/udev-gentoo-scripts.git",
+  "downloadLinks": ["https://gitweb.gentoo.org/proj/udev-gentoo-scripts.git/snapshot/udev-gentoo-scripts-35.tar.gz"],
+  "md5sums": ["3644e760ef0fdc16a3cbdcd0a97ee4c2"],
+  "patchesLinks": [],
+  "installedFiles": [],
+  "dependencies": [],
+  "options": []
+}
