@@ -11,13 +11,28 @@
   "installedFiles": [],
   "dependencies": [
     {
+      "name": "SystemBase",
+      "version": "0.2.0",
+      "options": []
+    },
+    {
       "name": "Udev-Init-Scripts",
       "version": "35.0.0",
       "options": []
     },
     {
-      "name": "Nano",
-      "version": "5.8.0",
+      "name": "Gperf",
+      "version": "3.1.0",
+      "options": []
+    },
+    {
+      "name": "Kmod",
+      "version": "29.0.0",
+      "options": []
+    },
+    {
+      "name": "Zlib",
+      "version": "1.2.11",
       "options": []
     }
   ],
