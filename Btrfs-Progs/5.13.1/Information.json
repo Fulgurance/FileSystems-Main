@@ -24,6 +24,11 @@
       "name": "Asciidoc",
       "version": "9.1.0",
       "options": []
+    },
+    {
+      "name": "E2fsprogs",
+      "version": "1.46.4",
+      "options": []
     }
   ],
   "options": []
