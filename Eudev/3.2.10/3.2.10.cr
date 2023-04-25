@@ -23,9 +23,7 @@ class Target < ISM::Software
         makeSource(["DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}","install"],buildDirectoryPath)
 
         if option("Openrc")
-            makeDirectory("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}etc/init.d")
-            moveFile("#{workDirectoryPath(false)}/udev-postmount","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}etc/init.d/udev-postmount")
-            runChmodCommand(["+x","udev-postmount"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}etc/init.d")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/udev-postmount","udev-postmount")
         end
     end
 
