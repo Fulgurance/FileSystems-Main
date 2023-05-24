@@ -5,9 +5,6 @@
   "architectures": ["x86_64"],
   "description": "Linux dynamic and persistent device naming support",
   "website": "https://github.com/eudev-project/eudev",
-  "downloadLinks": ["https://dev.gentoo.org/~blueness/eudev/eudev-3.2.10.tar.gz"],
-  "md5sums": ["60b135a189523f333cea5f71a3345c8d"],
-  "patchesLinks": [],
   "installedFiles": [],
   "dependencies": [
     {
@@ -48,8 +45,6 @@
           "options": []
         }
       ],
-      "downloadLinks": ["https://gitweb.gentoo.org/repo/gentoo.git/plain/sys-fs/eudev/files/udev-postmount"],
-      "md5sums": ["17ca36a764f5e8a89454344cde828740"]
     }
   ]
 }

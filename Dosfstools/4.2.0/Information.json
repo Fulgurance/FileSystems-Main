@@ -5,9 +5,6 @@
   "architectures": ["x86_64"],
   "description": "Programs to create, check and label file systems of the FAT family",
   "website": "https://github.com/dosfstools/dosfstools",
-  "downloadLinks": ["https://github.com/dosfstools/dosfstools/releases/download/v4.2/dosfstools-4.2.tar.gz"],
-  "md5sums": ["49c8e457327dc61efab5b115a27b087a"],
-  "patchesLinks": [],
   "installedFiles": [],
   "dependencies": [
     {

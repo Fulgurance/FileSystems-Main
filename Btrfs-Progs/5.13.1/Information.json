@@ -5,9 +5,6 @@
   "architectures": ["x86_64"],
   "description": "Userspace utilities to manage btrfs filesystems",
   "website": "https://github.com/kdave/btrfs-progs",
-  "downloadLinks": ["https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v5.13.1.tar.xz"],
-  "md5sums": ["8ca78d6e62179ef177597422e27a58fc"],
-  "patchesLinks": [],
   "installedFiles": [],
   "dependencies": [
     {
