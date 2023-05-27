@@ -23,7 +23,7 @@ class Target < ISM::Software
         makeSource(["DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}","install"],buildDirectoryPath)
 
         if option("Openrc")
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/udev-postmount","udev-postmount")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Udev-Postmount-Init.d","udev-postmount")
         end
     end
 
