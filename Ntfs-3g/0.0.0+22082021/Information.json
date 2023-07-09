@@ -13,6 +13,6 @@
       "options": []
     }
   ],
-  "kernelDependencies": [],
+  "kernelDependencies": ["CONFIG_FUSE_FS"],
   "options": []
 }

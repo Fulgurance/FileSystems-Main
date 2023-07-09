@@ -28,6 +28,6 @@
       "options": []
     }
   ],
-  "kernelDependencies": [],
+  "kernelDependencies": ["CONFIG_BTRFS_FS"],
   "options": []
 }

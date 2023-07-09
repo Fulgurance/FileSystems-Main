@@ -13,6 +13,6 @@
       "options": []
     }
   ],
-  "kernelDependencies": [],
+  "kernelDependencies": ["CONFIG_MSDOS_FS","CONFIG_VFAT_FS"],
   "options": []
 }
