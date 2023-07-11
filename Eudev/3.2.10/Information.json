@@ -2,7 +2,9 @@
   "port": "FileSystems-Main",
   "name": "Eudev",
   "version": "3.2.10",
-  "architectures": ["x86_64"],
+  "architectures": [
+    "x86_64"
+  ],
   "description": "Linux dynamic and persistent device naming support",
   "website": "https://github.com/eudev-project/eudev",
   "installedFiles": [],
@@ -45,7 +47,8 @@
           "version": "0.46.0",
           "options": []
         }
-      ]
+      ],
+      "kernelDependencies": []
     }
   ]
 }

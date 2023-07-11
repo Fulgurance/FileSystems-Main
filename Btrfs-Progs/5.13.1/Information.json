@@ -2,7 +2,9 @@
   "port": "FileSystems-Main",
   "name": "Btrfs-Progs",
   "version": "5.13.1",
-  "architectures": ["x86_64"],
+  "architectures": [
+    "x86_64"
+  ],
   "description": "Userspace utilities to manage btrfs filesystems",
   "website": "https://github.com/kdave/btrfs-progs",
   "installedFiles": [],
@@ -28,6 +30,8 @@
       "options": []
     }
   ],
-  "kernelDependencies": ["CONFIG_BTRFS_FS"],
+  "kernelDependencies": [
+    "CONFIG_BTRFS_FS"
+  ],
   "options": []
 }

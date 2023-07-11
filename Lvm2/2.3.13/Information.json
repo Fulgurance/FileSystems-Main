@@ -2,7 +2,9 @@
   "port": "FileSystems-Main",
   "name": "Lvm2",
   "version": "2.3.13",
-  "architectures": ["x86_64"],
+  "architectures": [
+    "x86_64"
+  ],
   "description": "Userspace toolset that provide logical volume management facilities on linux",
   "website": "https://sourceware.org/lvm2/",
   "installedFiles": [],
@@ -13,7 +15,19 @@
       "options": []
     }
   ],
-  "kernelDependencies": ["CONFIG_MD","CONFIG_BLK_DEV_DM","CONFIG_DM_CRYPT","CONFIG_DM_SNAPSHOT","CONFIG_DM_THIN_PROVISIONING","CONFIG_DM_CACHE","CONFIG_DM_MIRROR","CONFIG_DM_ZERO","CONFIG_DM_DELAY","CONFIG_BLK_DEV_RAM","CONFIG_MAGIC_SYSRQ"],
+  "kernelDependencies": [
+    "CONFIG_MD",
+    "CONFIG_BLK_DEV_DM",
+    "CONFIG_DM_CRYPT",
+    "CONFIG_DM_SNAPSHOT",
+    "CONFIG_DM_THIN_PROVISIONING",
+    "CONFIG_DM_CACHE",
+    "CONFIG_DM_MIRROR",
+    "CONFIG_DM_ZERO",
+    "CONFIG_DM_DELAY",
+    "CONFIG_BLK_DEV_RAM",
+    "CONFIG_MAGIC_SYSRQ"
+  ],
   "options": [
     {
       "name": "Openrc",
@@ -25,7 +39,8 @@
           "version": "0.46.0",
           "options": []
         }
-      ]
+      ],
+      "kernelDependencies": []
     }
   ]
 }
