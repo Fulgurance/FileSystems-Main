@@ -33,5 +33,13 @@
   "kernelDependencies": [
     "CONFIG_BTRFS_FS"
   ],
-  "options": []
+  "options": [
+    {
+      "name": "PosixAcl",
+      "description": "Enable posix access control lists support",
+      "active": false,
+      "dependencies": [],
+      "kernelDependencies": ["CONFIG_BTRFS_FS_POSIX_ACL"]
+    }
+  ]
 }
