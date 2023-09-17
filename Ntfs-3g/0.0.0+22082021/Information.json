@@ -18,5 +18,6 @@
   "kernelDependencies": [
     "CONFIG_FUSE_FS"
   ],
-  "options": []
+  "options": [],
+  "uniqueOptions": []
 }
