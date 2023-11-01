@@ -1,7 +1,7 @@
 {
   "port": "FileSystems-Main",
   "name": "Ntfs-3g",
-  "version": "0.0.0+22082021",
+  "version": "0.0.0-22082021",
   "architectures": [
     "x86_64"
   ],
