@@ -22,17 +22,17 @@ class Target < ISM::Software
         makeSource(["DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}","install"],buildDirectoryPath)
 
         if option("Openrc")
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/device-mapper.rc-2.02.105-r2","device-mapper")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Device-Mapper-Init.d","device-mapper")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/dmeventd.initd-2.02.184-r2","dmeventd")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Dmeventd-Init.d","dmeventd")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/lvm-monitoring.initd-2.02.105-r2","lvm-monitoring")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Lvm-Monitoring-Init.d","lvm-monitoring")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/lvm.rc-2.02.187","lvm")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Lvm-Init.d","lvm")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/lvmlockd.initd-2.02.166-r1","lvmlockd")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Lvmlockd-Init.d","lvmlockd")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/lvmpolld.initd-2.02.183","lvmpolld")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Lvmpolld-Init.d","lvmpolld")
         end
     end
 
