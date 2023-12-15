@@ -13,6 +13,11 @@
       "name": "Lzo",
       "version": "2.10.0",
       "options": []
+    },
+    {
+      "name": "E2fsprogs",
+      "version": ">=1.47.0",
+      "options": []
     }
   ],
   "kernelDependencies": [
