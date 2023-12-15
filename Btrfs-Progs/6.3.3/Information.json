@@ -18,6 +18,11 @@
       "name": "E2fsprogs",
       "version": ">=1.47.0",
       "options": []
+    },
+    {
+      "name": "Eudev",
+      "version": ">=3.2.14",
+      "options": []
     }
   ],
   "kernelDependencies": [
