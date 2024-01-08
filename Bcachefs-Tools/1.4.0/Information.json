@@ -30,28 +30,8 @@
       "options": []
     },
     {
-      "name": "Liburcu",
+      "name": "Userspace-Rcu",
       "version": ">=0.14.0",
-      "options": []
-    },
-    {
-      "name": "Util-Linux",
-      "version": ">=2.39.1",
-      "options": []
-    },
-    {
-      "name": "Zstd",
-      "version": ">=1.5.5",
-      "options": []
-    },
-    {
-      "name": "Pkgconf",
-      "version": ">=2.0.1",
-      "options": []
-    },
-    {
-      "name": "Valgrind",
-      "version": ">=3.21.0",
       "options": []
     }
   ],
