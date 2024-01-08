@@ -1,0 +1,61 @@
+{
+  "port": "FileSystems-Main",
+  "name": "Bcachefs-Tools",
+  "version": "1.4.0",
+  "architectures": [
+    "x86_64"
+  ],
+  "description": "Advanced new filesystem for Linux, with an emphasis on reliability and robustness and the complete set of features one would expect from a modern filesystem",
+  "website": "https://bcachefs.org/",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "name": "Libaio",
+      "version": ">=0.3.113",
+      "options": []
+    },
+    {
+      "name": "Llvm",
+      "version": ">=16.0.5",
+      "options": ["Clang"]
+    },
+    {
+      "name": "Keyutils",
+      "version": ">=1.6.1",
+      "options": []
+    },
+    {
+      "name": "Libsodium",
+      "version": ">=1.0.19",
+      "options": []
+    },
+    {
+      "name": "Liburcu",
+      "version": ">=0.14.0",
+      "options": []
+    },
+    {
+      "name": "Util-Linux",
+      "version": ">=2.39.1",
+      "options": []
+    },
+    {
+      "name": "Zstd",
+      "version": ">=1.5.5",
+      "options": []
+    },
+    {
+      "name": "Pkgconf",
+      "version": ">=2.0.1",
+      "options": []
+    },
+    {
+      "name": "Valgrind",
+      "version": ">=3.21.0",
+      "options": []
+    }
+  ],
+  "kernelDependencies": ["CONFIG_BCACHEFS_FS"],
+  "options": [],
+  "uniqueOptions": []
+}
