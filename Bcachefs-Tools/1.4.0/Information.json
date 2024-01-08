@@ -33,6 +33,11 @@
       "name": "Userspace-Rcu",
       "version": ">=0.14.0",
       "options": []
+    },
+    {
+      "name": "Lz4",
+      "version": ">=1.9.4",
+      "options": []
     }
   ],
   "kernelDependencies": ["CONFIG_BCACHEFS_FS"],
