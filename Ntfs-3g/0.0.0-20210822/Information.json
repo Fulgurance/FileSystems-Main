@@ -19,5 +19,6 @@
     "CONFIG_FUSE_FS"
   ],
   "options": [],
+  "uniqueDependencies": [],
   "uniqueOptions": []
 }

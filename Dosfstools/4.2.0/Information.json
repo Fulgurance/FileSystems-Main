@@ -20,5 +20,6 @@
     "CONFIG_VFAT_FS"
   ],
   "options": [],
+  "uniqueDependencies": [],
   "uniqueOptions": []
 }
