@@ -43,5 +43,6 @@
   "kernelDependencies": ["CONFIG_BCACHEFS_FS"],
   "options": [],
   "uniqueDependencies": [],
-  "uniqueOptions": []
+  "uniqueOptions": [],
+  "selectedDependencies": []
 }
