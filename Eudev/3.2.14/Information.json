@@ -2,34 +2,37 @@
   "port": "FileSystems-Main",
   "name": "Eudev",
   "version": "3.2.14",
-  "architectures": [
-    "x86_64"
-  ],
+  "architectures": ["x86_64"],
   "description": "Linux dynamic and persistent device naming support",
   "website": "https://github.com/eudev-project/eudev",
   "installedFiles": [],
   "dependencies": [
     {
+      "port": "SystemBase-Main",
       "name": "SystemBase",
       "version": ">=0.2.0",
       "options": []
     },
     {
+      "port": "FileSystems-Main",
       "name": "Udev-Init-Scripts",
       "version": ">=35.0.0",
       "options": []
     },
     {
+      "port": "Utilities-Main",
       "name": "Gperf",
       "version": ">=3.1.0",
       "options": []
     },
     {
+      "port": "Utilities-Main",
       "name": "Kmod",
       "version": ">=29.0.0",
       "options": []
     },
     {
+      "port": "BaseLibraries-Main",
       "name": "Zlib",
       "version": ">=1.2.11",
       "options": []
@@ -43,6 +46,7 @@
       "active": true,
       "dependencies": [
         {
+          "port": "InitSystems-Main",
           "name": "Openrc",
           "version": ">=0.46.0",
           "options": []

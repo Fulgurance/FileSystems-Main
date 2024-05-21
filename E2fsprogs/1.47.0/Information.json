@@ -2,16 +2,15 @@
   "port": "FileSystems-Main",
   "name": "E2fsprogs",
   "version": "1.47.0",
-  "architectures": [
-    "x86_64"
-  ],
+  "architectures": ["x86_64"],
   "description": "Filesystem utilities for use with the ext2, ext3 and ext4 filesystems",
   "website": "http://e2fsprogs.sourceforge.net/",
   "installedFiles": [],
   "dependencies": [
     {
+      "port": "SystemBase-Main",
       "name": "SystemBase",
-      "version": "0.2.0",
+      "version": ">=0.2.0",
       "options": []
     }
   ],

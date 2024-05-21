@@ -2,14 +2,13 @@
   "port": "FileSystems-Main",
   "name": "Dosfstools",
   "version": "4.2.0",
-  "architectures": [
-    "x86_64"
-  ],
+  "architectures": ["x86_64"],
   "description": "Programs to create, check and label file systems of the FAT family",
   "website": "https://github.com/dosfstools/dosfstools",
   "installedFiles": [],
   "dependencies": [
     {
+      "port": "SystemBase-Main",
       "name": "SystemBase",
       "version": ">=0.2.0",
       "options": []

@@ -2,19 +2,19 @@
   "port": "FileSystems-Main",
   "name": "Lvm2",
   "version": "2.3.22",
-  "architectures": [
-    "x86_64"
-  ],
+  "architectures": ["x86_64"],
   "description": "Userspace toolset that provide logical volume management facilities on linux",
   "website": "https://sourceware.org/lvm2/",
   "installedFiles": [],
   "dependencies": [
     {
+      "port": "BaseLibraries-Main",
       "name": "Libaio",
-      "version": "0.3.113",
+      "version": ">=0.3.113",
       "options": []
     },
     {
+      "port": "FileSystems-Main",
       "name": "Eudev",
       "version": ">=3.2.14",
       "options": []
@@ -41,6 +41,7 @@
       "active": true,
       "dependencies": [
         {
+          "port": "InitSystems-Main",
           "name": "Openrc",
           "version": ">=0.46.0",
           "options": []

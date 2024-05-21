@@ -2,14 +2,13 @@
   "port": "FileSystems-Main",
   "name": "Udev-Init-Scripts",
   "version": "35.0.0",
-  "architectures": [
-    "x86_64"
-  ],
+  "architectures": ["x86_64"],
   "description": "Udev startup scripts for openrc",
   "website": "https://gitweb.gentoo.org/proj/udev-gentoo-scripts.git",
   "installedFiles": [],
   "dependencies": [
     {
+      "port": "SystemBase-Main",
       "name": "SystemBase",
       "version": ">=0.2.0",
       "options": []

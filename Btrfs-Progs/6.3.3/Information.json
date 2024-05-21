@@ -2,24 +2,25 @@
   "port": "FileSystems-Main",
   "name": "Btrfs-Progs",
   "version": "6.3.3",
-  "architectures": [
-    "x86_64"
-  ],
+  "architectures": ["x86_64"],
   "description": "Userspace utilities to manage btrfs filesystems",
   "website": "https://github.com/kdave/btrfs-progs",
   "installedFiles": [],
   "dependencies": [
     {
+      "port": "BaseLibraries-Main",
       "name": "Lzo",
-      "version": "2.10.0",
+      "version": ">=2.10.0",
       "options": []
     },
     {
+      "port": "FileSystems-Main",
       "name": "E2fsprogs",
       "version": ">=1.47.0",
       "options": []
     },
     {
+      "port": "FileSystems-Main",
       "name": "Eudev",
       "version": ">=3.2.14",
       "options": []

@@ -2,16 +2,15 @@
   "port": "FileSystems-Main",
   "name": "Ntfs-3g",
   "version": "0.0.0-20221003",
-  "architectures": [
-    "x86_64"
-  ],
+  "architectures": ["x86_64"],
   "description": "NTFS-3G Safe Read/Write NTFS Driver",
   "website": "https://github.com/tuxera/ntfs-3g",
   "installedFiles": [],
   "dependencies": [
     {
+      "port": "SystemBase-Main",
       "name": "SystemBase",
-      "version": "0.2.0",
+      "version": ">=0.2.0",
       "options": []
     }
   ],
