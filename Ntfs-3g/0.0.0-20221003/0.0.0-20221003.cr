@@ -21,8 +21,8 @@ class Target < ISM::Software
 
         makeSource(["DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}","install"],buildDirectoryPath)
 
-        makeLink("../bin/ntfs-3g","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/sbin/mount.ntfs",:symbolicLink)
-        makeLink("ntfs-3g.8","#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}usr/share/man/man8/mount.ntfs.8",:symbolicLink)
+        makeLink("../bin/ntfs-3g","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/sbin/mount.ntfs",:symbolicLink)
+        makeLink("ntfs-3g.8","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/man/man8/mount.ntfs.8",:symbolicLink)
     end
 
 end

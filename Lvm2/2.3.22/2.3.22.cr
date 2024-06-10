@@ -22,19 +22,19 @@ class Target < ISM::Software
         makeSource(["DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}","install"],buildDirectoryPath)
 
         if option("Openrc")
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Device-Mapper-Init.d","device-mapper")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Device-Mapper-Init.d","device-mapper")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Dmeventd-Init.d","dmeventd")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Dmeventd-Init.d","dmeventd")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Lvm-Monitoring-Init.d","lvm-monitoring")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Lvm-Monitoring-Init.d","lvm-monitoring")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Lvm-Init.d","lvm")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Lvm-Init.d","lvm")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Lvmlockd-Init.d","lvmlockd")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Lvmlockd-Init.d","lvmlockd")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath(false)}/Lvmpolld-Init.d","lvmpolld")
+            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Lvmpolld-Init.d","lvmpolld")
 
-            deleteFile("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}/usr/lib/udev/rules.d/69-dm-lvm.rules")
+            deleteFile("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/lib/udev/rules.d/69-dm-lvm.rules")
         end
     end
 

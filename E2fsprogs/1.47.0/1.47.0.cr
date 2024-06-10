@@ -31,10 +31,10 @@ class Target < ISM::Software
 
         runGunzipCommand(["libext2fs.info.gz"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/info/")
 
-        deleteFile("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}/usr/lib/libcom_err.a")
-        deleteFile("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}/usr/lib/libe2p.a")
-        deleteFile("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}/usr/lib/libext2fs.a")
-        deleteFile("#{builtSoftwareDirectoryPath(false)}#{Ism.settings.rootPath}/usr/lib/libss.a")
+        deleteFile("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/lib/libcom_err.a")
+        deleteFile("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/lib/libe2p.a")
+        deleteFile("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/lib/libext2fs.a")
+        deleteFile("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/lib/libss.a")
     end
 
     def install
