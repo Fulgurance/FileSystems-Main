@@ -3,12 +3,12 @@ class Target < ISM::Software
     def configure
         super
 
-        configureSource([   "--prefix=/usr",
-                            "--bindir=/usr/sbin",
-                            "--sysconfdir=/etc",
-                            "--enable-manpages",
-                            "--disable-static"],
-                            buildDirectoryPath)
+        configureSource(arguments:  "--prefix=/usr      \
+                                    --bindir=/usr/sbin  \
+                                    --sysconfdir=/etc   \
+                                    --enable-manpages   \
+                                    --disable-static",
+                        path:       buildDirectoryPath)
     end
 
     def build
@@ -20,17 +20,19 @@ class Target < ISM::Software
     def prepareInstallation
         super
 
-        makeSource(["DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}","install"],buildDirectoryPath)
+        makeSource( arguments:  "DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath} install",
+                    path:       buildDirectoryPath)
 
         if option("Openrc")
-            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Udev-Postmount-Init.d","udev-postmount")
+            prepareOpenrcServiceInstallation(   path:   "#{workDirectoryPath}/Udev-Postmount-Init.d",
+                                                name:   "udev-postmount")
         end
     end
 
     def install
         super
 
-        runUdevadmCommand(["hwdb","--update"])
+        runUdevadmCommand("hwdb --update")
     end
 
 end

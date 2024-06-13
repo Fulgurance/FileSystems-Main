@@ -3,11 +3,11 @@ class Target < ISM::Software
     def configure
         super
 
-        configureSource([   "--prefix=/usr",
-                            "--disable-static",
-                            "--with-fuse=internal",
-                            "--docdir=/usr/share/doc/ntfs-3g-2022.10.3"],
-                            buildDirectoryPath)
+        configureSource(arguments:  "--prefix=/usr          \
+                                    --disable-static        \
+                                    --with-fuse=internal    \
+                                    --docdir=/usr/share/doc/ntfs-3g-2022.10.3",
+                        path:       buildDirectoryPath)
     end
 
     def build
@@ -19,10 +19,16 @@ class Target < ISM::Software
     def prepareInstallation
         super
 
-        makeSource(["DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}","install"],buildDirectoryPath)
+        makeSource( arguments:  "DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath} install",
+                    path:       buildDirectoryPath)
 
-        makeLink("../bin/ntfs-3g","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/sbin/mount.ntfs",:symbolicLink)
-        makeLink("ntfs-3g.8","#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/man/man8/mount.ntfs.8",:symbolicLink)
+        makeLink(   target: "../bin/ntfs-3g",
+                    path:   "#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/sbin/mount.ntfs",
+                    type:   :symbolicLink)
+
+        makeLink(   target: "ntfs-3g.8",
+                    path:   "#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/share/man/man8/mount.ntfs.8",
+                    type:   :symbolicLink)
     end
 
 end

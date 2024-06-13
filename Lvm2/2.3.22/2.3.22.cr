@@ -3,11 +3,11 @@ class Target < ISM::Software
     def configure
         super
 
-        configureSource([   "--prefix=/usr",
-                            "--enable-cmdlib",
-                            "--enable-pkgconfig",
-                            "--enable-udev_sync"],
-                            buildDirectoryPath)
+        configureSource(arguments:  "--prefix=/usr      \
+                                    --enable-cmdlib     \
+                                    --enable-pkgconfig  \
+                                    --enable-udev_sync",
+                        path:       buildDirectoryPath)
     end
 
     def build
@@ -19,20 +19,27 @@ class Target < ISM::Software
     def prepareInstallation
         super
 
-        makeSource(["DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}","install"],buildDirectoryPath)
+        makeSource( arguments:  "DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath} install",
+                    path:       buildDirectoryPath)
 
         if option("Openrc")
-            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Device-Mapper-Init.d","device-mapper")
+            prepareOpenrcServiceInstallation(   path:   "#{workDirectoryPath}/Device-Mapper-Init.d",
+                                                name:   "device-mapper")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Dmeventd-Init.d","dmeventd")
+            prepareOpenrcServiceInstallation(   path:   "#{workDirectoryPath}/Dmeventd-Init.d",
+                                                name:   "dmeventd")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Lvm-Monitoring-Init.d","lvm-monitoring")
+            prepareOpenrcServiceInstallation(   path:   "#{workDirectoryPath}/Lvm-Monitoring-Init.d",
+                                                name:   "lvm-monitoring")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Lvm-Init.d","lvm")
+            prepareOpenrcServiceInstallation(   path:   "#{workDirectoryPath}/Lvm-Init.d",
+                                                name:   "lvm")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Lvmlockd-Init.d","lvmlockd")
+            prepareOpenrcServiceInstallation(   path:   "#{workDirectoryPath}/Lvmlockd-Init.d",
+                                                name:   "lvmlockd")
 
-            prepareOpenrcServiceInstallation("#{workDirectoryPath}/Lvmpolld-Init.d","lvmpolld")
+            prepareOpenrcServiceInstallation(   path:   "#{workDirectoryPath}/Lvmpolld-Init.d",
+                                                name:   "lvmpolld")
 
             deleteFile("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/lib/udev/rules.d/69-dm-lvm.rules")
         end

@@ -8,14 +8,14 @@ class Target < ISM::Software
     def configure
         super
 
-        configureSource([   "--prefix=/usr",
-                            "--sysconfdir=/etc",
-                            "--enable-elf-shlibs",
-                            "--disable-libblkid",
-                            "--disable-libuuid",
-                            "--disable-uuidd",
-                            "--disable-fsck"],
-                            buildDirectoryPath)
+        configureSource(arguments:  "--prefix=/usr      \
+                                    --sysconfdir=/etc   \
+                                    --enable-elf-shlibs \
+                                    --disable-libblkid  \
+                                    --disable-libuuid   \
+                                    --disable-uuidd     \
+                                    --disable-fsck",
+                        path:       buildDirectoryPath)
     end
 
     def build
@@ -27,9 +27,11 @@ class Target < ISM::Software
     def prepareInstallation
         super
 
-        makeSource(["DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}","install"],buildDirectoryPath)
+        makeSource( arguments:  "DESTDIR=#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath} install",
+                    path:       buildDirectoryPath)
 
-        runGunzipCommand(["libext2fs.info.gz"],"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}usr/share/info/")
+        runGunzipCommand(   arguments:  "libext2fs.info.gz",
+                            path:       "#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/share/info/")
 
         deleteFile("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/lib/libcom_err.a")
         deleteFile("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/lib/libe2p.a")
@@ -40,8 +42,8 @@ class Target < ISM::Software
     def install
         super
 
-        runInstallInfoCommand([ "--dir-file=/usr/share/info/dir",
-                                "/usr/share/info/libext2fs.info"])
+        runInstallInfoCommand(arguments:    "--dir-file=/usr/share/info/dir \
+                                            /usr/share/info/libext2fs.info")
     end
 
 end
