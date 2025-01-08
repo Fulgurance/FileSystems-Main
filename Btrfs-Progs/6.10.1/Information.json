@@ -24,6 +24,12 @@
       "name": "Eudev",
       "version": ">=3.2.14",
       "options": []
+    },
+    {
+      "port": "ProgrammingTools-Main",
+      "name": "Setuptools",
+      "version": ">=75.3.0",
+      "options": []
     }
   ],
   "kernelDependencies": [
