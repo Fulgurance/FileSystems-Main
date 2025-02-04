@@ -1,0 +1,23 @@
+{
+  "port": "FileSystems-Main",
+  "name": "Squashfs-Tools",
+  "version": "4.6.1",
+  "architectures": ["x86_64"],
+  "description": "Tools to create and extract Squashfs filesystems",
+  "website": "https://github.com/plougher/squashfs-tools",
+  "installedFiles": [],
+  "dependencies": [
+    {
+      "port": "SystemBase-Main",
+      "name": "SystemBase",
+      "version": ">=0.2.0",
+      "options": []
+    }
+  ],
+  "kernelDependencies": ["CONFIG_SQUASHFS_FS"],
+  "options": [],
+  "uniqueDependencies": [],
+  "uniqueOptions": [],
+  "selectedDependencies": [],
+  "allowCodependencies": []
+}
