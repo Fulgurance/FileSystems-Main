@@ -15,7 +15,64 @@
     }
   ],
   "kernelDependencies": ["CONFIG_SQUASHFS_FS"],
-  "options": [],
+  "options": [
+    {
+      "name": "Gzip",
+      "description": "Enable gzip support",
+      "active": true,
+      "dependencies": [
+        {
+          "port": "Archivers-Main",
+          "name": "Gzip",
+          "version": ">=1.12.0",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Lz4",
+      "description": "Enable lz4 support",
+      "active": true,
+      "dependencies": [
+        {
+          "port": "BaseLibraries-Main",
+          "name": "Lz4",
+          "version": ">=1.10.0",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Xz",
+      "description": "Enable Xz support",
+      "active": true,
+      "dependencies": [
+        {
+          "port": "Archivers-Main",
+          "name": "Xz",
+          "version": ">=1.12.0",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    },
+    {
+      "name": "Zstd",
+      "description": "Enable zstd support",
+      "active": true,
+      "dependencies": [
+        {
+          "port": "Archivers-Main",
+          "name": "Zstd",
+          "version": ">=1.5.5",
+          "options": []
+        }
+      ],
+      "kernelDependencies": []
+    }
+  ],
   "uniqueDependencies": [],
   "uniqueOptions": [],
   "selectedDependencies": [],

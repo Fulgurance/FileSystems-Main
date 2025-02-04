@@ -9,13 +9,13 @@ class Target < ISM::Software
     def build
         super
 
-        makeSource( arguments:  "GZIP_SUPPORT=1     \
-                                LZ4_SUPPORT=1       \
-                                LZMA_XZ_SUPPORT=1   \
-                                LZO_SUPPORT=1       \
-                                XATTR_SUPPORT=1     \
-                                XZ_SUPPORT=1        \
-                                ZSTD_SUPPORT=1",
+        makeSource( arguments:  "GZIP_SUPPORT=#{option("Gzip") ? "1" : "0"} \
+                                LZ4_SUPPORT=#{option("Lz4") ? "1" : "0"}    \
+                                LZMA_XZ_SUPPORT=1                           \
+                                LZO_SUPPORT=1                               \
+                                XATTR_SUPPORT=1                             \
+                                XZ_SUPPORT=#{option("Xz") ? "1" : "0"}      \
+                                ZSTD_SUPPORT=#{option("Zstd") ? "1" : "0"}",
                     path: buildDirectoryPath)
     end
 
