@@ -25,7 +25,7 @@ class Target < ISM::Software
         makeSource( arguments:  "install",
                     path:       buildDirectoryPath,
                     environment: {  "INSTALL_PREFIX" => "#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr",
-                                    "INSTALL_MANPAGES_DIR" => "$(INSTALL_PREFIX)/share/man/man1"}
+                                    "INSTALL_MANPAGES_DIR" => "$(INSTALL_PREFIX)/share/man/man1"})
     end
 
 end
