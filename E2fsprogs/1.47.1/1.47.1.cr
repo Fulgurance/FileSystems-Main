@@ -39,7 +39,7 @@ class Target < ISM::Software
         deleteFile("#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr/lib/libss.a")
     end
 
-    def install
+    def deploy
         super
 
         runInstallInfoCommand(arguments:    "--dir-file=/usr/share/info/dir \
