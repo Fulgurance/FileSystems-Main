@@ -23,7 +23,7 @@ class Target < ISM::Software
     def prepareInstallation
         super
 
-        makeSource( arguments:  "INSTALL_PREFIX=\"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr\" install",
+        makeSource( arguments:  "INSTALL_PREFIX=\"#{builtSoftwareDirectoryPath}#{Ism.settings.rootPath}/usr\" USE_PREBUILT_MANPAGES=y install",
                     path:       buildDirectoryPath)
     end
 
