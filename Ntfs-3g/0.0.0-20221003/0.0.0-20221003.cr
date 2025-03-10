@@ -6,7 +6,7 @@ class Target < ISM::Software
         configureSource(arguments:  "--prefix=/usr          \
                                     --disable-static        \
                                     --with-fuse=internal    \
-                                    --docdir=/usr/share/doc/ntfs-3g-2022.10.3",
+                                    --disable-doc",
                         path:       buildDirectoryPath)
     end
 

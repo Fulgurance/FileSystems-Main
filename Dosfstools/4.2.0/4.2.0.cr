@@ -5,7 +5,7 @@ class Target < ISM::Software
         configureSource(arguments:  "--prefix=/usr              \
                                     --enable-compat-symlinks    \
                                     --mandir=/usr/share/man     \
-                                    --docdir=/usr/share/doc/dosfstools-4.2",
+                                    --disable-doc",
                         path:       buildDirectoryPath)
     end
 
