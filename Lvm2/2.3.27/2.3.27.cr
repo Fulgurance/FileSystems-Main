@@ -48,7 +48,9 @@ class Target < ISM::Software
     def deploy
         super
 
-        runRcUpdateCommand("add lvm boot")
+        if Ism.settings.autoDeployServices
+            runRcUpdateCommand("add lvm boot")
+        end
     end
 
 end

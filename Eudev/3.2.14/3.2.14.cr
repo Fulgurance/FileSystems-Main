@@ -38,8 +38,10 @@ class Target < ISM::Software
     def deploy
         super
 
-        runRcUpdateCommand("add udev sysinit")
-        runRcUpdateCommand("add udev-trigger sysinit")
+        if Ism.settings.autoDeployServices
+            runRcUpdateCommand("add udev sysinit")
+            runRcUpdateCommand("add udev-trigger sysinit")
+        end
     end
 
 end
