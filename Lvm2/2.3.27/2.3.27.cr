@@ -45,4 +45,10 @@ class Target < ISM::Software
         end
     end
 
+    def deploy
+        super
+
+        runRcUpdateCommand("add lvm boot")
+    end
+
 end

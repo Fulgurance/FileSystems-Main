@@ -35,4 +35,11 @@ class Target < ISM::Software
         runUdevadmCommand("hwdb --update")
     end
 
+    def deploy
+        super
+
+        runRcUpdateCommand("add udev sysinit")
+        runRcUpdateCommand("add udev-trigger sysinit")
+    end
+
 end
