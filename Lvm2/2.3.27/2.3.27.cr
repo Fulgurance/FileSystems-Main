@@ -45,4 +45,12 @@ class Target < ISM::Software
         end
     end
 
+    def deploy
+        if autoDeployServices
+            if option("Openrc")
+                runRcUpdateCommand("add lvm default")
+            end
+        end
+    end
+
 end

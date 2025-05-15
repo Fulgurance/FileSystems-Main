@@ -35,4 +35,13 @@ class Target < ISM::Software
         runUdevadmCommand("hwdb --update")
     end
 
+    def deploy
+        if autoDeployServices
+            if option("Openrc")
+                runRcUpdateCommand("add udev sysinit")
+                runRcUpdateCommand("add udev-trigger sysinit")
+            end
+        end
+    end
+
 end
