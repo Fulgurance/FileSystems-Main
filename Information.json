@@ -1,0 +1,7 @@
+{
+  "name": "FileSystems-Main",
+  "url": "https://github.com/Fulgurance/FileSystems-Main",
+  "publicKeyUrl": "http://www.slashlinux.io/keyring/Fulgurance.key",
+  "type": "Git",
+  "description": "Port that contain all softwares that manage file systems"
+}
