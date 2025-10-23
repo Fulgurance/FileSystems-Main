@@ -1,0 +1,19 @@
+PORT
+    FileSystems-Main
+NAME
+    E2fsprogs
+VERSION
+    1.47.1
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Filesystem utilities for use with the ext2, ext3 and ext4 filesystems
+WEBSITE
+    http://e2fsprogs.sourceforge.net/
+DEPENDENCIES
+        @ProgrammingTools-Main:Pkgconf>=2.3.0
+KERNELDEPENDENCIES
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

@@ -1,0 +1,25 @@
+PORT
+    FileSystems-Main
+NAME
+    Bcachefs-Tools
+VERSION
+    1.13.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Advanced new filesystem for Linux, with an emphasis on reliability and robustness and the complete set of features one would expect from a modern filesystem
+WEBSITE
+    https://bcachefs.org/
+DEPENDENCIES
+        @BaseLibraries-Main:Libaio>=0.3.113
+        @ProgrammingLanguages-Main:Llvm>=16.0.5(Clang)
+        @SecuritySoftwares-Main:Keyutils>=1.6.1
+        @SecurityLibraries-Main:Libsodium>=1.0.19
+        @BaseLibraries-Main:Userspace-Rcu>=0.14.0
+        @BaseLibraries-Main:Lz4>=1.9.4
+KERNELDEPENDENCIES
+    CONFIG_BCACHEFS_FS
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

@@ -1,0 +1,29 @@
+PORT
+    FileSystems-Main
+NAME
+    Eudev
+VERSION
+    3.2.14
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Linux dynamic and persistent device naming support
+WEBSITE
+    https://github.com/eudev-project/eudev
+DEPENDENCIES
+        @FileSystems-Main:Udev-Init-Scripts>=35.0.0
+        @Utilities-Main:Gperf>=3.1.0
+        @Utilities-Main:Kmod>=29.0.0
+        @BaseLibraries-Main:Zlib>=1.2.11
+KERNELDEPENDENCIES
+OPTIONS
+    name: Openrc
+    description: Enable openrc support
+    active: false
+    dependencies:
+        @InitSystems-Main:Openrc>=0.46.0
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

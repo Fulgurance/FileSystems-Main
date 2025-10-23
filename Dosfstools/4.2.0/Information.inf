@@ -1,0 +1,21 @@
+PORT
+    FileSystems-Main
+NAME
+    Dosfstools
+VERSION
+    4.2.0
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Programs to create, check and label file systems of the FAT family
+WEBSITE
+    https://github.com/dosfstools/dosfstools
+DEPENDENCIES
+        @SystemBase-Main:SystemBase>=0.2.0
+KERNELDEPENDENCIES
+    CONFIG_MSDOS_FS
+    CONFIG_VFAT_FS
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES
