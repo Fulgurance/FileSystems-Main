@@ -12,7 +12,8 @@ class Target < ISM::Software
                                     --reconfigure                           \
                                     #{@buildDirectoryNames["MainBuild"]}    \
                                     --prefix=/usr                           \
-                                    --buildtype=release",
+                                    --buildtype=release                     \
+                                    -Duseroot=false",
                         path:       mainWorkDirectoryPath)
     end
 
