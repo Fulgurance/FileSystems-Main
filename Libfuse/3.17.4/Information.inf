@@ -1,0 +1,21 @@
+PORT
+    FileSystems-Main
+NAME
+    Libfuse
+VERSION
+    3.17.4
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    The reference implementation of the Linux FUSE (Filesystem in Userspace) interface
+WEBSITE
+    https://github.com/libfuse/libfuse
+DEPENDENCIES
+    @ProgrammingTools-Main:Meson>=1.6.0
+KERNELDEPENDENCIES
+    CONFIG_FUSE_FS
+    CONFIG_CUSE
+OPTIONS
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES
