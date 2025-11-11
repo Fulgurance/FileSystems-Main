@@ -1,0 +1,39 @@
+PORT
+    FileSystems-Main
+NAME
+    Btrfs-Progs
+VERSION
+    6.17.1
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Userspace utilities to manage btrfs filesystems
+WEBSITE
+    https://github.com/kdave/btrfs-progs
+DEPENDENCIES
+        @BaseLibraries-Main:Lzo>=2.10.0
+        @FileSystems-Main:E2fsprogs>=1.47.0
+        @FileSystems-Main:Eudev>=3.2.14
+        @ProgrammingTools-Main:Setuptools>=75.3.0
+KERNELDEPENDENCIES
+    CONFIG_BTRFS_FS
+OPTIONS
+    name: Reiserfs
+    description: Enable reiserfs support
+    active: false
+    dependencies:
+    kernelDependencies:
+        CONFIG_REISERFS_FS
+        CONFIG_REISERFS_FS_XATTR
+        CONFIG_REISERFS_FS_POSIX_ACL
+
+    name: PosixAcl
+    description: Enable posix access control lists support
+    active: false
+    dependencies:
+    kernelDependencies:
+        CONFIG_BTRFS_FS_POSIX_ACL
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

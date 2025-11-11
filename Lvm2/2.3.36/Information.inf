@@ -1,0 +1,39 @@
+PORT
+    FileSystems-Main
+NAME
+    Lvm2
+VERSION
+    2.3.36
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Userspace toolset that provide logical volume management facilities on linux
+WEBSITE
+    https://sourceware.org/lvm2/
+DEPENDENCIES
+        @BaseLibraries-Main:Libaio>=0.3.113
+        @FileSystems-Main:Eudev>=3.2.14
+KERNELDEPENDENCIES
+    CONFIG_BLK_DEV
+    CONFIG_MD
+    CONFIG_BLK_DEV_DM
+    CONFIG_DM_CRYPT
+    CONFIG_DM_SNAPSHOT
+    CONFIG_DM_THIN_PROVISIONING
+    CONFIG_DM_CACHE
+    CONFIG_DM_MIRROR
+    CONFIG_DM_ZERO
+    CONFIG_DM_DELAY
+    CONFIG_BLK_DEV_RAM
+    CONFIG_MAGIC_SYSRQ
+OPTIONS
+    name: Openrc
+    description: Enable openrc support
+    active: false
+    dependencies:
+        @InitSystems-Main:Openrc>=0.46.0
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES

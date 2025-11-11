@@ -1,0 +1,48 @@
+PORT
+    FileSystems-Main
+NAME
+    Squashfs-Tools
+VERSION
+    4.7.4
+ARCHITECTURES
+    x86_64
+DESCRIPTION
+    Tools to create and extract Squashfs filesystems
+WEBSITE
+    https://github.com/plougher/squashfs-tools
+DEPENDENCIES
+        @BaseLibraries-Main:Lzo>=2.10.0
+KERNELDEPENDENCIES
+    CONFIG_SQUASHFS_FS
+OPTIONS
+    name: Gzip
+    description: Enable gzip support
+    active: true
+    dependencies:
+        @Archivers-Main:Gzip>=1.12.0
+    kernelDependencies:
+
+    name: Lz4
+    description: Enable lz4 support
+    active: true
+    dependencies:
+        @BaseLibraries-Main:Lz4>=1.10.0
+    kernelDependencies:
+
+    name: Xz
+    description: Enable Xz support
+    active: true
+    dependencies:
+        @Archivers-Main:Xz>=1.12.0
+    kernelDependencies:
+
+    name: Zstd
+    description: Enable zstd support
+    active: true
+    dependencies:
+        @Archivers-Main:Zstd>=1.5.5
+    kernelDependencies:
+
+UNIQUEDEPENDENCIES
+UNIQUEOPTIONS
+ALLOWCODEPENDENCIES
